@@ -21,8 +21,8 @@ if __name__=="__main__":
     take_it = TakeAction(json_path='in.json')
     initial_content, result_action = take_it.take_action(context)
 
-    print("----- INITIAL ------")
-    print(initial_content)
-    print("----- RESULT ------")
+    # print("----- INITIAL ------")
+    # print(initial_content)
+    # print("----- RESULT ------")
     print(result_action)
 
