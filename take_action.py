@@ -1,12 +1,9 @@
 import re
-from define_action import DefineAction
 
 class TakeAction(object):
-    def __init__(self, json_path=None, laws_folder=None):
+    def __init__(self, json_path=None):
         # Path to json that describes the action
         self.json_path = json_path
-        # Root of laws folder
-        self.laws_folder = laws_folder
 
         # Element to parse in order
         self.elemTypes = [  'header1_reference',
@@ -48,9 +45,6 @@ class TakeAction(object):
 
     def set_json_path(self, json_path):
         self.json_path = json_path
-
-    def set_law_folder(self, law_folder):
-        self.law_folder = law_folder
 
     def open_article_file(self, path):
         with open(path, 'r') as toto_file:
@@ -133,18 +127,7 @@ class TakeAction(object):
 
 
 if __name__=="__main__":
-
-    with open('example_data/example_9.json') as data_file:
-        data = json.load(data_file)
-    context = handledata(data)
-
-    take_it = TakeAction(json_path='in.json', laws_folder="example_data/law_data/")
-    initial_content, result_action = take_it.take_action(context)
-
-    print("----- INITIAL ------")
-    print(initial_content)
-    print("----- RESULT ------")
-    print(result_action)
+    pass
 
     # ------ UNI TESTS -------
     # index = find('a_phrase', content, rank=1)
@@ -157,5 +140,3 @@ if __name__=="__main__":
 
     # result_action = act(content, action="delet", index=index_context, args="autorisé")
     # print(result_action)
-
-
