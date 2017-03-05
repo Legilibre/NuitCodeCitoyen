@@ -1,0 +1,47 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "type": "quote", 
+                  "words": "autorisé"
+                }
+              ], 
+              "type": "words"
+            }, 
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "type": "quote", 
+                          "words": "défendu"
+                        }
+                      ], 
+                      "type": "words-reference"
+                    }
+                  ], 
+                  "id": "9", 
+                  "type": "article-reference"
+                }
+              ], 
+              "codeName": "code des instruments monétaires et des médailles", 
+              "type": "code-reference"
+            }
+          ], 
+          "editType": "replace", 
+          "type": "edit"
+        }
+      ], 
+      "isNew": false, 
+      "order": 1, 
+      "type": "article"
+    }
+  ]
+}
